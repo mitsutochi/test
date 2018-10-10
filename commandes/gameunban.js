@@ -16,9 +16,9 @@ if(!user){
 	message.channel.send("utilisateur introuvable")  
     return;
    }else{
-      delete ban[user.id]) ban[user.id]
+      delete ban[user.id]
       request({ url: banUrl, method: 'PUT', json: ban})
-      message. channel. send (`${user.tag} a été ban du jeu pour: ${message.content.substr(30)}`) 
+      message.channel.send(`${user.tag} a été ban du jeu pour: ${message.content.substr(30)}`) 
   return;
       } 
   }else{
@@ -27,6 +27,7 @@ if(!user){
   } 
 }) 
 }
+
 module.exports.help = {
 name: "gameunban" 
 } 
